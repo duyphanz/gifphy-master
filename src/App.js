@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import SearchForm from './components/search-form/SearchForm'
+import SearchForm from './components/search-form/SearchForm.container'
 import './App.css';
+import SearchResults from './components/search-results/SearchResults.container';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="container">
         Home page
         <SearchForm />
+        <SearchResults />
       </div>
     );
   }
