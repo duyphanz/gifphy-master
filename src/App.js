@@ -6,8 +6,8 @@ import SearchResults from './components/search-results/SearchResults.container';
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        Home page
+      <div className="container-fluid">
+
         <SearchForm />
         <SearchResults />
       </div>

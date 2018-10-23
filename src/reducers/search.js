@@ -1,4 +1,4 @@
-import {SEARCH_SUCCESS} from '../actions/search'
+import {SEARCH_SUCCESS, CLEAN_SEARCH} from '../actions/search'
 
 
 const initialState = {
@@ -23,6 +23,8 @@ export function searchReducer(state, action) {
                 ...state,
                 results: transformResult(action.data)
             }
+        case CLEAN_SEARCH:
+            return initialState
         default:
             return state
     }

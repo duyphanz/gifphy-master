@@ -11,10 +11,28 @@ import './SearchResults.css'
 //     }
 // ]
 
-export default function SearchResults({ results }) {
-    return (
-        <div>
-            {results.map( (result, index) => (<SearchResult thumnail={result.thumnail} key={index}></SearchResult>))}
-        </div>
-    )
+
+export default class SearchResults extends React.Component {
+
+    componentWillMount(){
+        this.props.onClean()
+    }
+
+    render() {
+        const {results} = this.props
+        return (
+            <div className="list-images">
+                {results.map( (result, index) => (<SearchResult thumnail={result.thumnail} key={index}></SearchResult>))}
+            </div>
+        )
+    }
 }
+
+
+// export default function SearchResults({ results }) {
+//     return (
+//         <div>
+//             {results.map( (result, index) => (<SearchResult thumnail={result.thumnail} key={index}></SearchResult>))}
+//         </div>
+//     )
+// }

@@ -1,0 +1,34 @@
+.navigation {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+   
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.logo-img {
+    float: right;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
